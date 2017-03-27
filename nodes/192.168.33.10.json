@@ -1,0 +1,20 @@
+{
+  "run_list": [
+    "recipe[vim]",
+    "recipe[rvm::system]",
+    "recipe[sqlite]",
+    "recipe[git]",
+    "recipe[build-essential]",
+    "recipe[openssl]",
+    "recipe[nginx]"
+  ],
+  "automatic": {
+    "ipaddress": "192.168.33.10"
+  },
+  "rvm": {
+    "user": "root",
+    "default_ruby": "ruby-2.1",
+    "user_default_ruby": "ruby-2.1",
+    "rubies": ["ruby-2.1"]
+  }
+}
